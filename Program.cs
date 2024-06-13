@@ -12,17 +12,7 @@ namespace Assignement6._4_Rotate_2D_Matrix
             int length = ints.GetLength(0);
 
             PrintMatrix("Original Matrix:", ints);
-            //for (int i = 0; i < length; i++)
-            //{
-            //    for (int j = 0; j < length; j++)
-            //    {
-            //        Console.Write($"| {ints[i, j]} ");
-            //    }
-            //    Console.Write("|");
-            //    Console.WriteLine();
-            //}
-            //Console.WriteLine();
-
+            
             for (int i = 0; i < length / 2; i++)
             {
                 for (int j = i; j < length - i - 1; j++)
@@ -35,16 +25,6 @@ namespace Assignement6._4_Rotate_2D_Matrix
                 }
             }
 
-            //for (int j = 0; j < length; j++)
-            //{
-            //    for (int i = length - 1; i >= 0; i--)
-            //    {
-            //        int temp = ints[j, length - i - 1];
-            //        ints[j, length - i - 1] = ints[i, j];
-            //        ints[length - i - 1, length - j - 1] = temp;
-            //        //Console.Write($"| {ints[i, j]} ");
-            //    }
-            //}
             PrintMatrix("Rotated Matrix:", ints);
         }
 
